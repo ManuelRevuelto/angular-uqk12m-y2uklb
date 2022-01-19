@@ -1,0 +1,21 @@
+<h2>Proyects</h2>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div *ngFor="let proyect of proyects" class="col-4">
+            <img src="{{proyect.src}}" alt="{{proyect.name}}"/>
+            <p>
+            <button (click)="share()">
+                {{proyect.name}}
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
