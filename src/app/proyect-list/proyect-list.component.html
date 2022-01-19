@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row mb-3" style="padding-left: 10%; padding-right: 10%">
 
-        <h2>Proyects</h2>
+        <h3>Projects</h3>
         <br><br><br>
         <div *ngFor="let proyect of proyects" class="col-sm-4">
-            <img src="{{proyect.src}}" alt="{{proyect.name}}"/>
+            <img src="{{proyect.src}}" alt="{{proyect.name}}" width="100%"/>
             <p><br>
             <button (click)="share()" class="btn btn-light">
                 {{proyect.name}}
@@ -13,7 +13,6 @@
 
     </div>
 </div>
-
 
 <link
     rel="stylesheet"
