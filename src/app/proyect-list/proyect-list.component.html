@@ -1,12 +1,12 @@
-<h2>Proyects</h2>
-
 <div class="container-fluid">
-    <div class="row">
+    <div class="row mb-3" style="padding-left: 10%; padding-right: 10%">
 
-        <div *ngFor="let proyect of proyects" class="col-4">
+        <h2>Proyects</h2>
+        <br><br><br>
+        <div *ngFor="let proyect of proyects" class="col-sm-4">
             <img src="{{proyect.src}}" alt="{{proyect.name}}"/>
-            <p>
-            <button (click)="share()">
+            <p><br>
+            <button (click)="share()" class="btn btn-light">
                 {{proyect.name}}
             </button>
         </div>
@@ -16,6 +16,6 @@
 
 
 <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+/>
