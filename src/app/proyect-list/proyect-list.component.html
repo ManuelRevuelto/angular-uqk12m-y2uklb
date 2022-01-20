@@ -6,7 +6,7 @@
         <div *ngFor="let proyect of proyects" class="col-sm-4">
             <img src="{{proyect.src}}" alt="{{proyect.name}}" width="100%"/>
             <p><br>
-            <button (click)="share()" class="btn btn-light">
+            <button [routerLink]="['/project', proyect.label]">
                 {{proyect.name}}
             </button>
         </div>
@@ -18,3 +18,4 @@
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 />
+(click)="share()" class="btn btn-light"

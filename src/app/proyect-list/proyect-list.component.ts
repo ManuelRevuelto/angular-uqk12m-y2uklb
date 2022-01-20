@@ -9,8 +9,11 @@ import { proyects } from '../proyects';
 })
 export class ProyectListComponent {
   proyects = proyects;
+  router: any;
 
   share() {
     window.alert('It do not worked');
+    
   }
+
 }

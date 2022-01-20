@@ -8,21 +8,17 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProyectListComponent } from './proyect-list/proyect-list.component';
 import { NgFallimgModule } from 'ng-fallimg';
 import { ProjectInfoComponent } from './project-info/project-info.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 const appRoutes: Routes = [
-  { path: 'projects', component: ProyectListComponent },
-  { path: 'hola', component: ProjectInfoComponent },
-  { path: '',   redirectTo: '/projects', pathMatch: 'full' }
+
 ];
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true }
-    ),
+    AppRoutingModule,
     NgFallimgModule.forRoot({
       default: '/assets/PJ.png',
       post: '/assets/PJ.png'
