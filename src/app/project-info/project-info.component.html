@@ -1,1 +1,21 @@
-<p>project-info works!</p>
+
+<div class="container-fluid">
+    <div class="row mb-3" style="padding-left: 10%; padding-right: 10%">
+
+        <h2>Project Details</h2><br><br><br>
+        <div class="col-sm-2"></div>
+
+
+        <div class="col-sm-4">
+            <div *ngIf="proyect">
+                <h3>{{ proyect.name }}</h3>
+                <img src="{{proyect.src}}" alt="{{proyect.name}}" width="60%"/>
+                <p>{{ proyect.description }}</p>
+            </div>
+        </div>
+        
+
+        <div class="col-sm-6"></div>
+
+    </div> 
+</div>
