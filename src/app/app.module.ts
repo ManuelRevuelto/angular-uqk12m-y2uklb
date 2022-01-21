@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProyectListComponent } from './proyect-list/proyect-list.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 import { NgFallimgModule } from 'ng-fallimg';
 import { ProjectInfoComponent } from './project-info/project-info.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProyectListComponent,
+    ProjectListComponent,
     ProjectInfoComponent
   ],
   bootstrap: [

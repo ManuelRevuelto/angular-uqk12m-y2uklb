@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Proyect, proyects } from '../proyects';
+import { Project, projects } from '../projects';
 
 @Component({
   selector: 'app-project-info',
@@ -9,17 +9,17 @@ import { Proyect, proyects } from '../proyects';
 })
 export class ProjectInfoComponent implements OnInit {
 
-  proyect: Proyect | undefined;
+  project: Project | undefined;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // First get the proyect id from the current route.
+    // First get the project id from the current route.
     const routeParams = this.route.snapshot.paramMap;
-    const proyectIdFromRoute = String(routeParams.get('label'));
+    const projectIdFromRoute = String(routeParams.get('label'));
   
-    // Find the proyect that correspond with the id provided in route.
-    this.proyect = proyects.find(proyect => proyect.label === proyectIdFromRoute);
+    // Find the project that correspond with the id provided in route.
+    this.project = projects.find(project => project.label === projectIdFromRoute);
   }
 
 }

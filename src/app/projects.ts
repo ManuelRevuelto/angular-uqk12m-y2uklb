@@ -1,4 +1,4 @@
-export interface Proyect {
+export interface Project {
   id: number;
   name: string;
   src: string,
@@ -6,7 +6,7 @@ export interface Proyect {
   label: string;
 }
 
-export const proyects = [
+export const projects = [
   {
     id: 1,
     name: 'Botella care',
