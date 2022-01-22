@@ -9,6 +9,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { NgFallimgModule } from 'ng-fallimg';
 import { ProjectInfoComponent } from './project-info/project-info.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 const appRoutes: Routes = [
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     TopBarComponent,
     ProjectListComponent,
-    ProjectInfoComponent
+    ProjectInfoComponent,
+    AboutMeComponent
   ],
   bootstrap: [
     AppComponent

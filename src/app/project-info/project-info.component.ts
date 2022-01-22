@@ -22,4 +22,5 @@ export class ProjectInfoComponent implements OnInit {
     this.project = projects.find(project => project.label === projectIdFromRoute);
   }
 
+
 }
