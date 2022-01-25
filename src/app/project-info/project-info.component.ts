@@ -10,10 +10,8 @@ import { Project, projects } from "../projects";
 export class ProjectInfoComponent implements OnInit {
 
   project: Project | undefined;
-  numero: Project | undefined;
   projects = projects;
-  a: Project | undefined;
-
+  
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
@@ -25,10 +23,6 @@ export class ProjectInfoComponent implements OnInit {
     this.project = projects.find(
       (project) => project.label === projectLabelFromRoute
     );
-
-
-    var a = this.project?.longitud;
-    console.log("El valor de a es " + a);
 
   }
 }
