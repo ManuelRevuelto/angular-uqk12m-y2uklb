@@ -9,11 +9,4 @@ import { projects } from '../projects';
 })
 export class ProjectListComponent {
   projects = projects;
-  router: any;
-
-  share() {
-    window.alert('It do not worked');
-    
-  }
-
 }

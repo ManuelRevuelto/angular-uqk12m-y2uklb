@@ -4,11 +4,12 @@
         <h3>Projects</h3>
         <br><br><br>
         <div *ngFor="let project of projects" class="col-sm-4">
-            <img src="{{project.src}}" alt="{{project.name}}" width="100%"/>
+            
             <p><br>
-            <button [routerLink]="['/project', project.label]" class="btn btn-light">
-                {{project.name}}
-            </button>
+            <a [routerLink]="['/project', project.label]">
+                <img src="{{project.src}}" alt="{{project.name}}" width="100%" class="imagen"/>
+            </a>
+            
         </div>
 
     </div>

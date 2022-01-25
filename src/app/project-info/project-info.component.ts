@@ -1,26 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Project, projects } from '../projects';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { Project, projects } from "../projects";
 
 @Component({
-  selector: 'app-project-info',
-  templateUrl: './project-info.component.html',
-  styleUrls: ['./project-info.component.css']
+  selector: "app-project-info",
+  templateUrl: "./project-info.component.html",
+  styleUrls: ["./project-info.component.css"],
 })
 export class ProjectInfoComponent implements OnInit {
 
   project: Project | undefined;
+  numero: Project | undefined;
+  projects = projects;
+  a: Project | undefined;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     // First get the project id from the current route.
     const routeParams = this.route.snapshot.paramMap;
-    const projectIdFromRoute = String(routeParams.get('label'));
-  
+    const projectLabelFromRoute = String(routeParams.get("label"));
+
     // Find the project that correspond with the id provided in route.
-    this.project = projects.find(project => project.label === projectIdFromRoute);
+    this.project = projects.find(
+      (project) => project.label === projectLabelFromRoute
+    );
+
+
+    var a = this.project?.longitud;
+    console.log("El valor de a es " + a);
+
   }
-
-
 }

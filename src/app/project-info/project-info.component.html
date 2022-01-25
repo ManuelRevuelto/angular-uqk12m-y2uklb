@@ -8,17 +8,25 @@
       <div *ngIf="project">
         <h3>{{ project.name }}</h3>
 
-        <br><br>
+        <br /><br />
 
         <p>ES/</p>
         <p>{{ project.descriptionES }}</p>
+
         <p>EN/</p>
         <p>{{ project.descriptionEN }}</p>
 
-        <br><br><br>
+        <br /><br /><br />
 
-        <img src="{{ project.src }}" alt="{{ project.name }}" width="70%" class="imagenes"/>
-        
+        <div *ngFor="let a of project.direcctiones; let indice = index">
+          <img
+            src="{{ project.direcctiones[indice] }}"
+            alt="{{ project.name }}"
+            width="70%"
+            class="imagenes"
+          />
+          <br /><br />
+        </div>
       </div>
     </div>
 
