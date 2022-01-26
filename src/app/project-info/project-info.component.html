@@ -20,6 +20,7 @@
 
         <div *ngFor="let a of project.direcctiones; let indice = index">
           <img
+            loading="lazy"
             src="{{ project.direcctiones[indice] }}"
             alt="{{ project.name }}"
             width="70%"
