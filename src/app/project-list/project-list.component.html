@@ -1,21 +1,20 @@
-<div class="container-fluid">
-    <div class="row mb-3" style="padding-left: 10%; padding-right: 10%">
-
-        <h3>Projects</h3>
-        <br><br><br>
-        <div *ngFor="let project of projects" class="col-sm-4">
-            
-            <p><br>
-            <a [routerLink]="['/project', project.label]">
-                <img src="{{project.src}}" alt="{{project.name}}" width="100%" class="imagen" loading="lazy"/>
-            </a>
-            
+<main>
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div *ngFor="let project of projects" class="col-sm-4">
+                
+                <p><br>
+                <a [routerLink]="['/project', project.label]">
+                    <img src="{{project.src}}" alt="{{project.name}}" width="100%" class="imagen" loading="lazy"/>
+                </a>
+                
+            </div>
+    
         </div>
-
     </div>
-</div>
-
-<link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-/>
+    
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+</main>
