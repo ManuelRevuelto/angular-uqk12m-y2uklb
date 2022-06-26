@@ -3,7 +3,6 @@
 * {
   font-family: Montserrat, Montserrat, sans-serif;
   color: #616161;
-  font-size: 1.4vw;
 }
 
 /* TOP-BAR */
@@ -39,18 +38,8 @@ header {
   justify-content: center;
 }
 
-/* PROJECTS-LIST */
-
-main {
-  display: block;
-  font-weight: 300;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
+nav {
+  font-size: 1.4vw;
 }
 
 .button {
@@ -71,6 +60,20 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
+/* PROJECTS */
+
+main {
+  display: block;
+  font-weight: 300;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .imagen {
   display: flex;
   margin: auto;
@@ -88,8 +91,48 @@ a {
   margin: auto;
 }
 
+/* PROJECT-INFO */
+
+.descripcion {
+  padding-bottom: 8%;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.2vw;
+}
+
+.descripcion h1 {
+  font-size: 2vw;
+}
+
+.descripcion h3 {
+  font-size: 1.4vw;
+}
+
+.perfil {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2vw;
+  margin-top: 2%;
+}
+
+.texto {
+  padding: 2%;
+  padding-left: 4%;
+  font-size: 1vw;
+  text-align: justify;
+}
+
 @media (max-width: 575px) {
   * {
+    font-family: Montserrat, Montserrat, sans-serif;
+    color: #616161;
+  }
+  nav {
     font-size: 2.6vw;
   }
   app-top-bar {
@@ -108,5 +151,31 @@ a {
   .imagen {
     width: 80%;
     padding-bottom: 4%;
+  }
+
+  .descripcion {
+    padding-bottom: 8%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.8vw;
+  }
+
+  .descripcion h1 {
+    font-size: 2.6vw;
+  }
+
+  .descripcion h3 {
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  .texto {
+    padding-left: 1%;
+    font-size: 1.6vw;
+    text-align: justify;
   }
 }
