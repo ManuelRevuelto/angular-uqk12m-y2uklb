@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 1,
     name: 'Campaña Body Positive',
-    src: 'assets/Imagenes/01.CampañaBodyPositive/01.bodypositive.jpg',
+    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/free-3-poster-mockup-psd-29382.jpg',
     descriptionES: '',
     descriptionEN: '',
     label:'CampañaBodyPositive',
@@ -33,7 +33,7 @@ export const projects = [
   {
     id: 3,
     name: 'Botella Carenoveau',
-    src: 'https://www.esda.es/resize/740x0/files/images/u709/wine-bottle-mockups-179610.jpg',
+    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/wine-bottle-mockups-179610.jpg',
     descriptionES: 'Diseño del tape y la etiqueta para una botella de vino borgoña. Como se puede observar los tonos de los colores que aparecen en la etiqueta pretenden recordar al sabor afrutado que tiene este vino, aparece un rostro ya que es el símbolo distintivo de la marca.',
     descriptionEN: 'Design of cup and label for a burgundy wine bottle. ',
     label:'BotellaCarenoveau',
@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 7,
     name: 'Cubiertas de Libros Infantiles',
-    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/captura-de-pantalla-76489.jpg',
+    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/039619.jpg',
     descriptionES: 'Diseño de cubiertas de libros infantiles de algunos cuentos clasicos de Charles Perrault',
     descriptionEN: 'Design of children\'s book covers of some classic tales by Charles Perrault.',
     label:'CubiertasLibrosInfantiles',
@@ -123,7 +123,7 @@ export const projects = [
   {
     id: 12,
     name: 'Linograbado',
-    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/book59272.jpg',
+    src: 'https://www.esda.es/resize/400x300_crop/files/images/u709/mockup-586798.jpg',
     descriptionES: '',
     descriptionEN: 'Book cover created from a linographic design that I created.',
     label:'Linograbado',

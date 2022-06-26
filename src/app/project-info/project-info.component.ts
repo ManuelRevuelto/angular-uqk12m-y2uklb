@@ -1,11 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { Project, projects } from "../projects";
+import { Project, projects } from "../models/projects";
 
 @Component({
   selector: "app-project-info",
   templateUrl: "./project-info.component.html",
-  styleUrls: ["./project-info.component.css"],
 })
 export class ProjectInfoComponent implements OnInit {
 
